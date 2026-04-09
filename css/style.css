@@ -66,32 +66,52 @@ h1 {
 
 /* GALERÍA */
 .galeria {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 25px;
-  justify-content: center;
+}
+
+.contenedor {
+  max-width: 1200px; /* límite de ancho */
+  margin: 0 auto; /* centra */
+  padding: 0 20px;
 }
 
 .card {
   background-color: #1c1c1c;
   border: 1px solid #333;
-  border-radius: 10px;
-  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
   text-decoration: none;
   color: #fff;
   transition: transform 0.3s ease;
+  max-width: 220px; /* controla ancho tipo poster */
+  margin: 0 auto;
 }
-.card:hover { transform: scale(1.05); border-color: rgb(163, 40, 40); }
+
+.card:hover { transform: scale(1.03);
+  border-color: rgb(163, 40, 40);
+}
+
 .card img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  aspect-ratio: 2 / 3; /* proporción poster */
+  object-fit: contain;
+  background-color: #000; /* relleno si sobra espacio */
 }
+
 .card h3 {
   font-family: "Playfair Display", serif;
+  font-size: 1em;
   color: #ffd3ec;
-  padding: 10px 15px 0;
+  padding: 10px 12px 0;
 }
-.card p { padding: 0 15px 15px; }
+
+.card p {
+  font-size: 0.85em;
+  padding: 5px 12px 12px;
+  color: #ccc;
+}
 
 /* MODAL */
 .modal {
@@ -108,28 +128,49 @@ h1 {
 
 .modal-contenido {
   background: #111;
-  padding: 20px;
+  padding: 25px;
   width: 90%;
   max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto; /* (scroll interno) */
   border-radius: 8px;
-  text-align: center;
+  margin: auto;
+}
+
+.descripcion {
+  margin-bottom: 20px;
+  color: #ccc;
+  line-height: 1.5;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.modal-grid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .video-container {
+  flex: 2;
   position: relative;
-  width: 100%;
-  max-width: 800px; /* límite en desktop */
-  margin: 20px auto; /* centra horizontalmente */
   aspect-ratio: 16 / 9;
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.ficha {
+  flex: 1;
+  font-size: 0.95em;
+  color: #ddd;
+}
+
+.ficha p {
+  margin-bottom: 8px;
 }
 
 .cerrar {
@@ -170,13 +211,22 @@ footer {
 footer a { color: #ffd3ec; text-decoration: none; }
 footer a:hover { color: rgb(163, 40, 40); }
 
-/* 🔸 RESPONSIVE 🔸 */
-@media (max-width: 900px) {
-  h1 { font-size: 2em; }
+/* RESPONSIVE */
+@media (max-width: 768px) {
 
+  .modal-grid {
+    flex-direction: column;
+  }
+
+  h1 { 
+    font-size: 2em; 
+  }
+
+  /* MENÚ MOVIBLE */
   .navegador {
     position: absolute;
-    top: 70px; right: 0;
+    top: 70px;
+    right: 0;
     background-color: #111;
     width: 100%;
     flex-direction: column;
@@ -188,17 +238,51 @@ footer a:hover { color: rgb(163, 40, 40); }
     display: flex;
   }
 
-  .menu-icon { display: block; }
+  .menu-icon { 
+    display: block; 
+  }
 
-  .card { width: 90%; }
-  .bloque { padding: 40px 5%; }
-  .modal-contenido { width: 95%; }
+  /* CARDS */
+  .card { 
+    max-width: 100%;
+  }
+
+  .bloque { 
+    padding: 40px 5%; 
+  }
+
+  .modal-contenido { 
+    width: 95%; 
+  }
 }
 
 @media (max-width: 600px) {
-  h1 { font-size: 1.8em; }
-  .card h3 { font-size: 1.1em; }
-  .listanav { font-size: 1em; }
-  .slides img { border-radius: 5px; }
-  .video-container { max-width: 100%;
+
+  h1 { 
+    font-size: 1.8em; 
+  }
+
+  .card h3 { 
+    font-size: 1.1em; 
+  }
+
+  .listanav { 
+    font-size: 1em; 
+  }
+
+  .slides img { 
+    border-radius: 5px; 
+  }
+
+  .video-container { 
+    max-width: 100%; 
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card img {
+    aspect-ratio: 2 / 3;
+  }
 }
