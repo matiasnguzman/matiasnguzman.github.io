@@ -3,377 +3,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio – Matías Nicolás Guzmán</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" data-i18n-attr="content" data-i18n="meta-desc" content="Portfolio de Matías Guzmán — Editor de Video y Realizador Audiovisual en Buenos Aires.">
+  <title>Matías Guzmán — Realizador & Editor</title>
 
-  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Caslon+Display&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b689b40f3b.js" crossorigin="anonymous"></script>
+</head>
 <body>
 
-<header id="top">
-  <div class="contenedor-header">
-    <div class="logo">
-      <img src="img/Logo MNG-02.png" alt="Logo Matías Guzmán">
-    </div>
+<div class="grain" aria-hidden="true"></div>
 
-    <!-- Menú Hamburguesa -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-    <nav class="navegador">
-      <a href="#cine" class="listanav">Cine</a>
-      <a href="#laboral" class="listanav">Laboral</a>
-      <a href="#proyectos" class="listanav">Proyectos</a>
-      <a href="#fotografia" class="listanav">Fotografía</a>
-      <a href="#contacto" class="listanav">Contacto</a>
-    </nav>
+<header>
+  <a href="#" class="logo">Matías Nicolás Guzmán</a>
+  <nav>
+    <a href="#sobre-mi"   data-i18n="nav-about">Sobre mí</a>
+    <a href="#cine"       data-i18n="nav-film">Cine</a>
+    <a href="#laboral"    data-i18n="nav-work">Laboral</a>
+    <a href="#proyectos"  data-i18n="nav-projects">Proyectos</a>
+    <a href="#fotografia" data-i18n="nav-photo">Fotografía</a>
+    <a href="#contacto"   data-i18n="nav-contact">Contacto</a>
+  </nav>
+  <div class="header-controls">
+    <button id="lang-toggle"  aria-label="Switch language">EN</button>
+    <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
   </div>
 </header>
 
 <main>
 
-  <!-- 🎬 CINE -->
-  <section id="cine" class="bloque">
-    <div class="contenedor">
-      <h1>Proyectos Cinematográficos</h1>
+<!-- HERO -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-content">
+    <span class="hero-label">Realizador Documental · Editor</span>
+    <h1>Matías<br>Nicolás<br>Guzmán</h1>
+    <p>Cine, poesía y narrativas audiovisuales.</p>
+    <a href="#cine" class="btn-primary">Ver trabajos</a>
+  </div>
+</section>
 
-      <div class="galeria">
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="section about-section">
+  <div class="about-grid">
 
-        <a href="#modal-cambio" class="card">
-          <img src="img/portfolio/1_peliculas/1_cambio_de_frente/poster.png" alt="Cambio de Frente">
-          <h3>Cambio de Frente (2021)</h3>
-          <p>Largometraje documental · BAFICI 2021</p>
-        </a>
-
-        <a href="#modal-manos" class="card">
-          <img src="img/portfolio/1_peliculas/2_manos_libres/Manos_Libres_0.png" alt="Manos Libres">
-          <h3>Manos Libres (2020)</h3>
-          <p>Cortometraje documental</p>
-        </a>
-
-        <a href="#modal-serludico" class="card">
-          <img src="img/portfolio/1_peliculas/4_ser_ludico/Ser lúdico poster 1.png" alt="Ser Lúdico">
-          <h3>Ser Lúdico (2020)</h3>
-          <p>Cortometraje documental</p>
-        </a>
-
-        <a href="#modal-eldorado" class="card">
-          <img src="img/portfolio/1_peliculas/3_eldorado/poster_eldorado.png" alt="Eldorado">
-          <h3>Eldorado (2019)</h3>
-          <p>Cortometraje documental</p>
-        </a>
-
+    <div class="about-text fade-up">
+      <span class="eyebrow" data-i18n="about-eyebrow">Editor de Video · Realizador Audiovisual</span>
+      <h2 class="about-name">Matías<br>N. Guzmán</h2>
+      <p class="about-bio" data-i18n="about-bio">
+        Editor audiovisual y realizador con base en Buenos Aires. Especializado en montaje de cine documental, edición para redes sociales y producción audiovisual institucional. Trabajé en proyectos seleccionados en el BAFICI y colaboro con organizaciones culturales, editoriales y organismos del Estado.
+      </p>
+      <div class="skills">
+        <span class="skill-tag">Premiere Pro</span>
+        <span class="skill-tag">After Effects</span>
+        <span class="skill-tag">Illustrator</span>
+        <span class="skill-tag">Lightroom Classic</span>
+        <span class="skill-tag">Pro Tools</span>
+        <span class="skill-tag" data-i18n="skill-photo">Fotografía</span>
+        <span class="skill-tag" data-i18n="skill-sound">Sonido</span>
+      </div>
+      <div class="about-actions">
+        <a href="cv/CV_Matias_Guzman.pdf" class="btn-primary" download data-i18n="btn-cv">Descargar CV</a>
+        <div class="contact-icons">
+          <a href="mailto:matiasnguz.07@gmail.com" class="icon-link" aria-label="Email" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com/in/matias-nicolas-guzman/" class="icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/matias.n.guzman" class="icon-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- 💼 LABORAL -->
-  <section id="laboral" class="bloque">
-    <div class="contenedor">
-    <h1>Experiencia Laboral</h1>
+    <div class="about-photo fade-up" style="transition-delay: 0.15s">
+      <img src="img/Matías Guzmán - Perfil.jpg"
+           data-i18n-attr="alt" data-i18n="about-img-alt"
+           alt="Matías Guzmán — Editor y Realizador Audiovisual">
+    </div>
 
-      <div class="galeria">
+  </div>
+</section>
 
-      <a href="#modal-tp" class="card">
+<!-- CINE -->
+<section id="cine" class="section section-alt">
+  <h2 class="section-title fade-up">
+    <span class="section-num">01</span>
+    <span data-i18n="section-film">Proyectos Cinematográficos</span>
+  </h2>
+
+  <div class="featured-film fade-up">
+    <img src="img/portfolio/1_peliculas/1_cambio_de_frente/poster.png" alt="Poster Cambio de Frente">
+    <div class="featured-content">
+      <span class="eyebrow">BAFICI 2021 · Largometraje documental</span>
+      <h3>Cambio de Frente</h3>
+      <p>Codirigido junto a Mariano Alesso y Maximiliano Rivas. Subsidio de postproducción del INCAA. Disponible en CINE.AR.</p>
+      <a href="proyectos/cambio.html" class="btn-primary">Ver proyecto</a>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <a href="proyectos/manos.html" class="card fade-up" style="transition-delay:0.08s">
+      <div class="card-img-wrap">
+        <img src="img/portfolio/1_peliculas/2_manos_libres/Manos_Libres_0.png" alt="Manos Libres">
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>Manos Libres</h3>
+        <p data-i18n="card-manos-sub">Realización Integral · 2020</p>
+      </div>
+    </a>
+
+    <a href="proyectos/ludico.html" class="card fade-up" style="transition-delay:0.16s">
+      <div class="card-img-wrap">
+        <img src="img/portfolio/1_peliculas/4_ser_ludico/Ser lúdico poster.png" alt="Ser Lúdico">
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>Ser Lúdico</h3>
+        <p data-i18n="card-ludico-sub">Dirección, producción y montaje · 2020</p>
+      </div>
+    </a>
+
+    <a href="proyectos/eldorado.html" class="card fade-up" style="transition-delay:0.24s">
+      <div class="card-img-wrap">
+        <img src="img/portfolio/1_peliculas/3_eldorado/poster_eldorado.png" alt="Eldorado">
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>Eldorado</h3>
+        <p data-i18n="card-eldorado-sub">Realización Integral · 2019</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- LABORAL -->
+<section id="laboral" class="section">
+  <h2 class="section-title fade-up">
+    <span class="section-num">02</span>
+    <span data-i18n="section-work">Experiencia Laboral</span>
+  </h2>
+
+  <div class="grid">
+
+    <a href="proyectos/tp.html" class="card fade-up">
+      <div class="card-img-wrap">
         <img src="img/portfolio/2_trabajos/1_tiempo_de_parque/Tiempo-de-parque-1.png" alt="Tiempo de Parque">
-        <h3>Tiempo de Parque Ediciones (2024-presente)</h3>
-        <p>Community Manager · Creador de Contenido</p>
-      </a>
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>Tiempo de Parque</h3>
+        <p data-i18n="card-tp-sub">Creador de Contenidos · 2024–Actualidad</p>
+      </div>
+    </a>
 
-      <a href="#modal-indec" class="card">
+    <a href="proyectos/indec.html" class="card fade-up" style="transition-delay:0.1s">
+      <div class="card-img-wrap">
         <img src="img/portfolio/2_trabajos/2_indec/INDEC-1.png" alt="INDEC">
-        <h3>INDEC (2011-presente)</h3>
-        <p>Diseñador Gráfico y Audiovisual de contenido didactico</p>
-      </a>
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>INDEC</h3>
+        <p data-i18n="card-indec-sub">Diseñador Audiovisual · 2021–Actualidad</p>
+      </div>
+    </a>
 
-      <a href="#modal-vintage" class="card">
+    <a href="proyectos/argentina-vintage.html" class="card fade-up" style="transition-delay:0.2s">
+      <div class="card-img-wrap">
         <img src="img/portfolio/2_trabajos/3_argentina_vintage/Argentina-Vinatege-1.png" alt="Argentina Vintage">
-        <h3>Argentina Vintage (2025)</h3>
-        <p>Editor de Video</p>
-      </a>
-
+        <div class="card-overlay"><span>Ver proyecto</span></div>
       </div>
-    </div>
-  </section>
+      <div class="card-body">
+        <h3>Argentina Vintage</h3>
+        <p>Editor de video · 2025</p>
+      </div>
+    </a>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="bloque">
-    <div class="contenedor">
-    <h1>Proyectos y Publicaciones</h1>
+  </div>
+</section>
 
-      <div class="galeria">
+<!-- PROYECTOS -->
+<section id="proyectos" class="section section-alt">
+  <h2 class="section-title fade-up">
+    <span class="section-num">03</span>
+    <span data-i18n="section-projects">Otros Proyectos</span>
+  </h2>
 
-      <a href="#modal-rayo" class="card">
+  <div class="grid">
+    <a href="proyectos/rayo.html" class="card fade-up">
+      <div class="card-img-wrap">
         <img src="img/portfolio/3_otras_experiencias/1_rayo_verde/El-Rayo-Verde-1.png" alt="El Rayo Verde">
-        <h3>El Rayo Verde (2022-2025)</h3>
-        <p>Fotografía y contenido de ciclo de poesía</p>
-      </a>
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>El Rayo Verde</h3>
+        <p data-i18n="card-rayo-sub">Editor · Fotógrafo · 2022–2025</p>
+      </div>
+    </a>
 
-      <a href="#modal-tiempo" class="card">
+    <a href="proyectos/tiempo-iluminado.html" class="card fade-up" style="transition-delay:0.08s">
+      <div class="card-img-wrap">
         <img src="img/portfolio/3_otras_experiencias/2_el_tiempo_iluminado/El_tiempo_iluminado_1.png" alt="El tiempo iluminado">
-        <h3>El tiempo iluminado (2025)</h3>
-        <p>Publicación de libro de poesía por Tiempo de parque ediciones</p>
-      </a>
+        <div class="card-overlay"><span>Ver proyecto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>El tiempo iluminado</h3>
+        <p>Libro de poesía · 2025</p>
+      </div>
+    </a>
 
-      <a href="#modal-arlt" class="card">
+    <a href="proyectos/buscando-a-arlt.html" class="card fade-up" style="transition-delay:0.16s">
+      <div class="card-img-wrap">
         <img src="img/portfolio/3_otras_experiencias/3_buscando_a_arlt/Buscando_a_Arlt_1.png" alt="Buscando a Arlt">
-        <h3>Buscando a Arlt (2025)</h3>
-        <p>Maquetado de libro (CFP24)</p>
-      </a>
-
+        <div class="card-overlay"><span>Ver proyecto</span></div>
       </div>
-    </div>
-  </section>
-
-  <!-- FOTOGRAFÍA -->
-  <section id="fotografia" class="bloque fotografia">
-    <div class="contenedor">
-    <h1>Fotografía</h1>
-
-    <div class="galeria">
-
-      <a href="#album-rayoverde" class="card">
-        <img src="img/fotografia/1_rayoverde/Diana1.2-2.jpg" alt="Rayo Verde 2022">
-        <h3>Rayo Verde - 22/06/2022</h3>
-      </a>
-
-      <a href="#album-taller" class="card">
-        <img src="img/foto_album2.jpg" alt="Taller CFP24">
-        <h3>Tiempo de Parque Ediciones</h3>
-      </a>
-
+      <div class="card-body">
+        <h3>Buscando a Arlt</h3>
+        <p>Maquetado de libro · 2025</p>
       </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOTOGRAFÍA -->
+<section id="fotografia" class="section">
+  <h2 class="section-title fade-up">
+    <span class="section-num">04</span>
+    <span data-i18n="section-photo">Fotografía</span>
+  </h2>
+
+  <div class="grid">
+    <a href="proyectos/foto.html" class="card fade-up">
+      <div class="card-img-wrap">
+        <img src="img/fotografia/1_rayoverde/Diana1.2-2.jpg" alt="Fotografías Rayo Verde">
+        <div class="card-overlay"><span>Ver galería</span></div>
+      </div>
+      <div class="card-body">
+        <h3>Rayo Verde</h3>
+        <p data-i18n="card-foto-sub">Registro fotográfico de encuentros</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contact-section">
+  <div class="contact-inner fade-up">
+    <span class="eyebrow" data-i18n="contact-eyebrow">Hablemos</span>
+    <h2 class="contact-heading" data-i18n="contact-heading">¿Tenés un proyecto?</h2>
+    <p class="contact-sub" data-i18n="contact-sub">Estoy disponible para colaboraciones, trabajos freelance y posiciones de tiempo completo.</p>
+    <a href="mailto:matiasnguz.07@gmail.com" class="btn-primary">matiasnguz.07@gmail.com</a>
+    <div class="social-row">
+      <a href="https://linkedin.com/in/matias-nicolas-guzman/" target="_blank" rel="noopener">LinkedIn</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/matias.n.guzman" target="_blank" rel="noopener">Instagram</a>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
-<footer id="contacto">
-  <p>© 2026 Matías Nicolás Guzmán | <a href="mailto:matiasnguz.07@gmail.com">matiasnguz.07@gmail.com</a></p>
+<footer>
+  <p data-i18n="footer">© 2026 Matías Guzmán · Buenos Aires</p>
 </footer>
 
-<!-- ===== MODALES ===== -->
-
-<!-- Cine -->
-<div id="modal-cambio" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Cambio de Frente (2021)</h2>
-    <p class="descripcion">Largometraje documental. Seleccionado en BAFICI 2021.</p>
-
-  <div class="modal-grid">
-    <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/IPI6MHdario?si=OzjEFWKhlk82py-E" title="Cambio de Frente" allowfullscreen></iframe>
-  </div>
-
-      <div class="ficha">
-        <p><strong>Dirección:</strong> Matías Guzmán, Maximiliano Rivas y Mariano Alesso</p>
-        <p><strong>Año:</strong> 2021</p>
-        <p><strong>Duración:</strong> 68 min</p>
-        <p><strong>Rol:</strong> Realización integral, producción, cámara, sonido y montaje</p>
-      </div>
-
-    </div>
-  </div>
-  
-</div>
-
-<div id="modal-manos" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Manos Libres</h2>
-    <p class="descripcion">Cortometraje documental. Realización integral.</p>
-  
-    <div class="modal-grid">
-      <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/6IglUnKZR1o?si=a-uwd4CWpbsjKKUE" title="Manos Libres" allowfullscreen></iframe>
-      </div>
-
-      <div class="ficha">
-        <p><strong>Dirección:</strong> Matías Guzmán</p>
-        <p><strong>Año:</strong> 2020</p>
-        <p><strong>Duración:</strong> 30 min</p>
-        <p><strong>Formato:</strong> Digital</p>
-        <p><strong>Rol:</strong> Dirección, producción, cámara y montaje</p>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-serludico" class="modal">
-  <div class="modal-contenido">
-  <a href="#!" class="cerrar">&times;</a>
-
-  <h2>Ser Lúdico</h2>
-  <p class="descripcion">Cortometraje documental. Realización integral.</p>
-
-    <div class="modal-grid">
-      <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/8PbncAzM4MI?si=5t0TfGC10crS3shq" title="Ser Lúdico" allowfullscreen></iframe>
-      </div>
-
-      <div class="ficha">
-        <p><strong>Dirección:</strong> Matías Guzmán</p>
-        <p><strong>Año:</strong> 2020</p>
-        <p><strong>Duración:</strong> 9 min</p>
-        <p><strong>Formato:</strong> Digital</p>
-        <p><strong>Rol:</strong> Dirección, producción, cámara y montaje</p>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-<div id="modal-eldorado" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Eldorado</h2>
-    <p class="descripcion">Cortometraje documental. Realización integral.</p>
-
-    <div class="modal-grid">
-      <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/XEJwKGX81LE?si=4OLkaPCB6ZLdH-tK" title="Eldorado" allowfullscreen></iframe>
-    </div>
-
-    <div class="ficha">
-        <p><strong>Dirección:</strong> Matías Guzmán</p>
-        <p><strong>Año:</strong> 2019</p>
-        <p><strong>Duración:</strong> 5 min</p>
-        <p><strong>Formato:</strong> Digital</p>
-        <p><strong>Rol:</strong> Realización y montaje</p>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-<!-- 💼 Laboral -->
-<div id="modal-tp" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Tiempo de Parque Ediciones</h2>
-    <p>Producción integral de contenidos audiovisuales para redes. Reels, diseño de piezas gráficas y cobertura fotográfica de eventos culturales.</p>
-
-    <img src="img/evento_tdp1.jpg" alt="">
-  </div>
-</div>
-
-<div id="modal-indec" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>INDEC</h2>
-    <p>Diseñador audiovisual y editor de contenidos didácticos desde 2011. Creación de materiales educativos, animaciones y videos institucionales.</p>
-
-  </div>
-</div>
-
-<div id="modal-vintage" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Argentina Vintage</h2>
-    <p>Edición de videos para canal de YouTube. Montaje a partir de voz en off, selección de archivo y efectos visuales.</p>
-  </div>
-</div>
-
-<!-- 📚 Proyectos -->
- <div id="modal-rayo" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>El Rayo Verde</h2>
-    <p>Maquetado y diseño del libro en el taller CFP24 (2025).</p>
-    <img src="" alt="">
-  </div>
-</div>
-
-<div id="modal-arlt" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Buscando a Arlt</h2>
-    <p>Maquetado y diseño del libro en el taller CFP24 (2025).</p>
-    <img src="" alt="">
-  </div>
-</div>
-
-<div id="modal-tiempo" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>El tiempo iluminado</h2>
-    <p>Libro de poesía publicado en Tiempo de Parque Ediciones (2024).</p>
-    <img src="img/tiempo_iluminado.jpg" alt="">
-  </div>
-</div>
-
-<!-- Carrusel -->
-<div id="album-rayoverde" class="modal">
-  <div class="modal-contenido">
-    <a href="#!" class="cerrar">&times;</a>
-
-    <h2>Rayo Verde · 22/06/2022</h2>
-    <p class="subtitulo">Registro fotográfico de lecturas performáticas en espacio cultural independiente.</p>
-
-<div class="carrusel">
-
-  <!-- RADIOS -->
-  <input type="radio" name="rayo" id="r1" checked>
-  <input type="radio" name="rayo" id="r2">
-  <input type="radio" name="rayo" id="r3">
-
-  <!-- SLIDES -->
-  <div class="slides">
-
-    <div class="slide">
-      <img src="img/fotografia/1_rayoverde/Diana1.2-2.jpg" alt="">
-      <p class="epigrafe">Diana en lectura performática</p>
-    </div>
-
-    <div class="slide">
-      <img src="img/fotografia/1_rayoverde/Diana2.2-2.jpg" alt="">
-      <p class="epigrafe">Momento de lectura íntima</p>
-    </div>
-
-    <div class="slide">
-      <img src="img/fotografia/1_rayoverde/Federico Torres1.2-2.jpg" alt="">
-      <p class="epigrafe">Lectura colectiva</p>
-    </div>
-
-  </div>
-
-  <!-- NAV -->
-  <div class="navegacion">
-    <label for="r1"></label>
-    <label for="r2"></label>
-    <label for="r3"></label>
-  </div>
-
-  <!-- INFO FINAL -->
-  <div class="album-info">
-  <p><strong>Cámara:</strong> Canon T6i</p>
-  <p><strong>Lente:</strong> 50mm</p>
-  <p><strong>Lugar:</strong> Rayo Verde</p>
-  <p><strong>Fecha:</strong> 22/06/2022</p>
-  </div>
-
-</div>
-</div>
-
-
-
+<script src="script.js"></script>
 </body>
 </html>
